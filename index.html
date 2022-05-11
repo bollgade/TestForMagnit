@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+</head>
+
+<body>
+
+  <main>
+    <section>
+      <form action="#" class="reg-form">
+        <div class="reg-form__item">
+          <label for="login">Логин</label>
+          <input type="text" id="login" name="login" placeholder="Введите логин">
+        </div>
+
+        <div class="reg-form__item">
+          <label for="password">Пароль</label>
+          <input type="password" id="password" name="password" placeholder="************">
+        </div>
+
+        <div class="reg-form__item">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Введите email">
+        </div>
+
+        <div class="reg-form__item">
+          <label for="animal">Животное</label>
+          <select id="animal" name="animal" size="1">
+            <option value="" disabled selected hidden class="reg-form__placeholder">Выберите животное</option>
+            <option value="Рыбка" class="reg-form__option">Рыбка</option>
+            <option value="Кошка" class="reg-form__option">Кошка</option>
+            <option value="Мышка" class="reg-form__option">Мышка</option>
+            <option value="Собачка" class="reg-form__option">Собачка</option>
+            <option value="Хомячек" class="reg-form__option">Хомячек</option>
+            <option value="Попугайчик" class="reg-form__option">Попугайчик</option>
+          </select>
+        </div>
+
+        <button type='submit'>Записать</button>
+        <button type='reset'>отменить</button>
+      </form>
+    </section>
+
+    <section>
+      <input type="text" placeholder="Фильтр по логину">
+      <table class="database" border="1">
+        <tr class="database__header">
+          <th class="database__header-item">#</th>
+          <th class="database__header-item">Логин</th>
+          <th class="database__header-item">Пароль (наоборот)</th>
+          <th class="database__header-item">Email</th>
+          <th class="database__header-item">Животное</th>
+          <th class="database__header-item">Число</th>
+          <th class="database__header-item">Дата записи</th>
+          <th class="database__header-item">Комментарий</th>
+        </tr>
+      </table>
+    </section>
+
+  </main>
+  <script src="./index.js"></script>
+</body>
+
+</html>
